@@ -1,0 +1,5 @@
+Session 2
+What is the use of selector property
+    A value is assigned to it which is used in the index.html body tag so that the app component can be displayed
+	
+	selector :app-root
