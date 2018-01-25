@@ -1,5 +1,20 @@
 Session 2
-What is the use of selector property
+1.What is the use of selector property
     A value is assigned to it which is used in the index.html body tag so that the app component can be displayed
 	
-	selector :app-root
+	selector :"app-root"
+
+2.Decorator:
+     Symbol is @ and it is used to enhance the class and its elements
+
+3.Where do u register a component?
+       In app.module ->  @NgModule -declarations
+
+4.Command for creating component in CLI
+        ng generate component comp_name or 
+        ng g c comp_nme
+
+5.Which property is required  in a decorater or say @Component 
+  property: template or templateUrl is a must ..
+   
+6. 
