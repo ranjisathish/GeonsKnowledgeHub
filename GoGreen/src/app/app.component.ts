@@ -9,5 +9,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Go Green';
   name='';
+  message='';
+  allowClick=false;
   
-}
+  constructor()
+  {
+    setTimeout(() =>
+    {
+      this.allowClick=true
+    },2000);
+    
+  }
+  displayMsg()
+  {
+    this.message="Good Msg"
+  }
+  
+  }
+  

@@ -17,4 +17,14 @@ Session 2
 5.Which property is required  in a decorater or say @Component 
   property: template or templateUrl is a must ..
    
-6. 
+6. Property binding syntax is [] ie [disabled]="name of the vaiable or function " 
+   Event binding syntax is () ie (click)="name of the function or can create an inline function "
+   String Interpolation is {{}} ie {{name of the variable or function name }}
+
+7.$signed event are reserved variable name which can be used in the templates 
+ie $event  are data emitted with the event 
+
+8.Two way binding [()] we need to use the ngModel directive also formModules has to be imported in app.modules
+
+
+9.Short Cut key for commenting a block Ctrl+K+C

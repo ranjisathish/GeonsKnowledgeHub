@@ -17,7 +17,10 @@
          <!--app-comp-name></app-comp-name  selector used as element -->
          <!--div app-comp-name></div selector used as attribute -->
          <div class ='app-comp-name'></div>
-       </div>
+         <button class="btn btn-primary" (click)="displayMsg()" [disabled]="!allowClick" >Click Me</button>  {{message}}
+       {{allowClick}}
+        <p></p>
+        </div>
       </div>
     </div>
    
