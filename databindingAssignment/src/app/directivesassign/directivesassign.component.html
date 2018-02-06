@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="onDisplayClick()"> Display Details</button>  
+<div *ngIf="displayStatus">
+  <p> The secret password is Tuna </p>
+</div>
+<!-- <p *ngFor="let count of countClick" [ngStyle]="count >= 5 && {'background-color':'green'}  || count === 1 && {'background-color':'yellow'}"> The number of times button clicked {{countClick}}</p> -->
+<!-- <p *ngFor="let count of countClick" [ngStyle]='{backgroundColor:getColor()}'> The number of times button clicked {{countClick}}</p> -->
+<!-- <p *ngFor="let count of countClick" [ngStyle]="count >= 5 && {'background-color':'green'}"> The number of times button clicked {{countClick}}</p> -->
+<p *ngFor="let count of countClick" [ngStyle]="count >= 5 && {backgroundColor:'green'}"> The number of times button clicked {{countClick}}</p>

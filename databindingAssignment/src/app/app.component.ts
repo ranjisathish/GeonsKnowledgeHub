@@ -22,5 +22,6 @@ export class AppComponent {
   onClick()
   {
     this.username="";
+    this.allowclick=false;
   }
 }

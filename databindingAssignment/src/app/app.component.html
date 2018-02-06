@@ -1,16 +1,24 @@
-<H1>
+<H1 align="center">
   Data Binding
 </H1>
-
+<div class="container">
 <div class="row">
-  <div class="col">
+  <div class="col-xs-12">
   <label class="form-control">Enter the Username</label>
 </div>
-<div class="col">
-  <input type="text"  [(ngModel)]="username" (input)="onInput($event)"/> 
+<div class="col-xs-12">
+  <input type="text"  class="form-control" [(ngModel)]="username" (input)="onInput($event)"/> 
 </div>
   </div>
-  <button class="btn btn-prmary" [disabled]="!allowclick" (click)="onClick()">Click </button>
+
+  <button class="btn btn-primary" [disabled]="username===''" (click)="username=''">Click </button>
+<!-- <button class="btn btn-primary" [disabled]="!allowclick" (click)="onClick()">Click </button> -->
 <p>
   The username entered for the two way binding is {{username}}.This is done by string interpolation
 </p>
+</div>
+<hr>
+<div>
+  <app-directivesassign></app-directivesassign>
+</div>
+

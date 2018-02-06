@@ -1,5 +1,13 @@
-<p>
-  comp-name works! added the Server component into the comp-name 
-  
-  <app-server></app-server>
-</p>
+
+  <button class="btn btn-primary" (dblclick) ="ondblClick()" >Display Server</button>
+  <p *ngIf="serverStatus; else noSever"> {{getServerdetails()}}{{serverDetails}}</p>
+  <ng-template #noServer>
+         There are no servers
+    </ng-template>
+ 
+  <p [ngStyle]="{backgroundColor:getColor()}">
+    {{serverDetails}}
+    {{serverDetails}}
+  </p>
+ 
+  <app-server ></app-server>
