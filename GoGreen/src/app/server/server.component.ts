@@ -8,12 +8,20 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent {
     setValue="";
+    servers =[];
       /* onClickView(event:any){
         console.log (event);
-       
+
     }*/
-    onClickView(event:Event){
-        this.setValue=(<HTMLInputElement>event.target).value;
-       
+    onClickView(event: Event) {
+        this.setValue = (<HTMLInputElement>event.target).value;
+
+    }
+    onAdd()
+    {
+        this.servers.push('Add server');
+    }
+    onRemove(ix:number) {
+      this.servers.splice(ix,1);
     }
     }

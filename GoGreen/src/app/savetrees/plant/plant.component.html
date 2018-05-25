@@ -1,0 +1,31 @@
+<p>Plant list </p>
+<div class='row'>
+  <div class="col-xs-6">
+    <!-- <a href="#" class ="list-group-item clearfix" *ngFor='let plantlt of plantlist'>
+      <div class="pull-left" >
+        <h4   class="list-group-item-heading"> {{plantlt.name}}
+        </h4>
+        <p class="list-group-item-list">Type {{plantlt.type}}
+        </p>
+      
+      </div>
+         <span class="pull-right">
+           <img [src]="plantlt.imagePath" class="img-responsive" alt="" style="max-height: 50px;"> 
+          </span>
+    </a> -->
+    <a href="#" class ="list-group-item clearfix" (click)="onselcted()">
+      <div class="pull-left" >
+        <h4   class="list-group-item-heading"> {{listtreee.name}}
+        </h4>
+        <p class="list-group-item-list">Type {{listtreee.type}}
+        </p>
+      
+      </div>
+         <span class="pull-right">
+           <img [src]="listtreee.imagePath" class="img-responsive" alt="" style="max-height: 50px;"> 
+          </span>
+    </a>
+
+
+ </div>
+</div>

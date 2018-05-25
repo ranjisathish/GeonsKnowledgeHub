@@ -1,3 +1,17 @@
 <p>This is a server component</p>
 <input type ="text" (input)="onClickView($event)" validationMessage="Enter a value"/> {{setValue}}
 <input type ="text" [(ngModel)] ="setValue" validationMessage="Enter a value"/> 
+
+<p>Removing a value from the list</p>
+<div>
+    <button class="btn btn-primary"
+    (click)=onAdd()> Add servers
+            </button>
+            <ul class="list-group">
+                <li  class="list-group-item" *ngFor="let server of servers;let i = index" (click)="onRemove(i)" >{{server}}
+
+                </li>
+            </ul>
+
+            <button class="btn btn-danger" >Delete</button>
+</div>

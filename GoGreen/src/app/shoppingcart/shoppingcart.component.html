@@ -1,0 +1,39 @@
+<p>
+  Shoping Cart
+</p>
+<div class='row'>
+  <div class="col-xs-10">
+    <ul class="list-group">
+
+    <a  class ="list-group-item"  *ngFor='let additm of addList'>
+      {{additm.item}} ({{additm.amount}})
+       </a>
+      </ul> 
+    </div>
+</div>
+<div>
+<p>Shopping Edit</p>
+<app-shoppingedit (addToList)="addthis($event)"></app-shoppingedit>
+<!-- <form > -->
+<!-- <div class="row">
+  <div class="col-sm-5 form-group">
+<label for="iname">Item</label>
+<input  type="text"  [(ngModel)] = "txtname" id="iname" class="form-control" [ngModelOptions]="{standalone: true}" /> {{txtname}}
+</div>
+<div class="col-sm-2 form-group">
+<label for="iamt" >Amount</label>
+<input type="number" id="iamt" class="form-control"> 
+</div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+      <button class="btn btn-success" type="submit" (click)="getValue()">Add</button>
+      <button class="btn btn-danger" type="button">Delete</button>
+      <button class="btn btn-primary" type="button">Clear</button>
+    </div>
+</div>
+</form> -->
+<!-- <hr>
+This is used to display the value passing 
+<app-savetrees [addValue]="addValue"></app-savetrees> -->
+</div>

@@ -1,9 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<!-- <div  *ngIf='disableStatus'>
+  <h1 style="text-align:center">
     Welcome to {{ title }}!
   </h1>
-</div>
+
    <div>
     Enter your Name:<input type="text" [(ngModel)]="name">
      <p>Welcome  {{name}} Have a nice time</p>
@@ -16,12 +16,52 @@
        <div class='col-xs-12'>
          <!--app-comp-name></app-comp-name  selector used as element -->
          <!--div app-comp-name></div selector used as attribute -->
-         <div class ='app-comp-name'></div>
+         <!-- <div class ='app-comp-name'></div>
          <button class="btn btn-primary" (click)="displayMsg()" [disabled]="!allowClick" >Click Me</button>  {{message}}
        {{allowClick}}
+       <button class="btn btn-primary" (click)="disableStatus=false" >ShowMyApp</button> 
         <p></p>
         </div>
       </div>
     </div>
-   
-  
+  </div>
+   <div class="header" *ngIf='!disableStatus'>
+     <app-header></app-header>
+
+   </div>
+   -->
+   <!-- <div>
+     <app-adddetails (AddClick)="valueAdded($event)"></app-adddetails>
+     <!-- <app-displaydetails [msgWelcome]="title"  ></app-displaydetails>   -->
+    <!-- <app-displaydetails *ngFor="let adddet of adddetl" [addvalue]="adddet"  >
+     
+    </app-displaydetails> -->
+    <!-- Passing the value using the alias name given in the input  -->
+    <!-- <app-displaydetails *ngFor="let adddet of adddetl" [passValue]="adddet" [name]="adddet.typeof" >
+     <p #contentchild>
+      {{adddet.typeof}}  {{adddet.amount}}
+    </p>
+    </app-displaydetails>
+   </div>
+   <button class="btn btn-primary" (click)="Onchange()" >ShowMyApp</button> --> 
+   <!-- <app-gamecontroller (intervalfired)="onintervalfired($event)">
+     
+   </app-gamecontroller> -->
+   <div class="header" >
+    <app-header  (featureSelected)="navigate($event)"></app-header>
+   <div class="container">
+     <div class="row">
+<div class="col-md-12">
+  <app-savetrees *ngIf="displayfeature==='trees'"></app-savetrees>
+  <app-shoppingcart *ngIf="displayfeature!=='trees'"></app-shoppingcart>
+</div>
+
+     </div>
+   </div>
+ <div [ngSwitch]="value" appHighligthcolor>
+   <p *ngSwitchCase="5">The value is 5</p>
+   <p *ngSwitchCase="10">The value is 10</p>
+   <p *ngSwitchCase="15">The value is 15</p>
+   <p *ngSwitchDefault>The value is 25</p>
+ </div>
+  </div>

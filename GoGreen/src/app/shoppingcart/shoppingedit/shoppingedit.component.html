@@ -1,0 +1,21 @@
+<form >
+  <div class="row">
+    <div class="col-sm-5 form-group">
+  <label for="iname">Item</label>
+  <!-- <input  type="text"  [(ngModel)] = "item" id="iname" #itemname class="form-control" name="iname" /> -->
+  <input  type="text"   id="iname" #itemname class="form-control" name="iname" />
+</div>
+  <div class="col-sm-2 form-group">
+  <label for="iamt" >Amount</label>
+  <input type="number" id="iamt" class="form-control" name ="iamt" #itemamount> 
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <button class="btn btn-success" type="submit" (click)="onAdd()">Add</button>
+      <button class="btn btn-danger" type="button">Delete</button>
+      <button class="btn btn-primary" type="button">Clear</button>
+    </div>
+  </div>
+  </form>
+  
